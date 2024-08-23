@@ -9,7 +9,7 @@ To get started with the project, follow these steps:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/crypto-wallet-connector.git
+   git clone https://github.com/Crazyhaller/nextjs-crypto-assignment
    cd crypto-wallet-connector
    ```
 
