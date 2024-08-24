@@ -5,8 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Crypto Wallet',
-  description: 'A simple crypto wallet',
+  title: 'Crypto Wallet & Game',
+  description: 'A simple crypto wallet and coin flipper',
 }
 
 export default function RootLayout({

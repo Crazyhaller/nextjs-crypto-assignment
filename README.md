@@ -1,6 +1,6 @@
 # Crypto Wallet & Coin Flip
 
-Welcome to the Crypto Wallet & Coin Flip! This project is a futuristic-themed web application built with [Next.js](https://nextjs.org/). It allows users to connect their crypto wallets and view their balance in a stylish, cyberpunk-inspired interface and also play a coin flip game to earn more crypto balance.
+Welcome to the Crypto Wallet & Coin Flip! This project is a futuristic-themed web application built with [Next.js](https://nextjs.org/). It allows users to connect their crypto wallets and view their balance in a stylish, cyberpunk-inspired interface and also play a coin flip game to earn more crypto balance. It utilizes Ethereum(ETH)
 
 ## Getting Started
 
