@@ -1,6 +1,6 @@
-# Crypto Wallet Connector
+# Crypto Wallet & Coin Flip
 
-Welcome to the Crypto Wallet Connector! This project is a futuristic-themed web application built with [Next.js](https://nextjs.org/). It allows users to connect their crypto wallets and view their balance in a stylish, cyberpunk-inspired interface.
+Welcome to the Crypto Wallet & Coin Flip! This project is a futuristic-themed web application built with [Next.js](https://nextjs.org/). It allows users to connect their crypto wallets and view their balance in a stylish, cyberpunk-inspired interface and also play a coin flip game to earn more crypto balance.
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ To get started with the project, follow these steps:
 
    ```sh
    git clone https://github.com/Crazyhaller/nextjs-crypto-assignment
-   cd crypto-wallet-connector
+   cd nextjs-crypto-assignment
    ```
 
 2. Install the dependencies:
@@ -31,6 +31,7 @@ To get started with the project, follow these steps:
 
 - Connect your crypto wallet
 - View your account balance
+- Play a coin flip game to earn crypto balance
 - Futuristic, cyberpunk-inspired UI
 
 ## Contributing
