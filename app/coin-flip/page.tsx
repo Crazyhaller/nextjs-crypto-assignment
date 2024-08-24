@@ -5,6 +5,61 @@ import { ethers } from 'ethers'
 import { utils } from 'web3'
 import Link from 'next/link'
 
+// TODO: The following commented code is for the contract deployment and interaction for actual loses/gains of tokens.
+//
+// import CoinFlipABI from '../path/to/CoinFlip.json' // Update this path
+// const [loading, setLoading] = useState(false)
+// const contractAddress = 'YOUR_CONTRACT_ADDRESS_HERE'
+//  const contract = new ethers.Contract(contractAddress, CoinFlipABI, signer)
+//  const flipCoin = async (guess: boolean) => {
+//   setLoading(true)
+//   try {
+//     const tx = await contract.flipCoin(guess)
+//     await tx.wait()
+//     alert('Transaction successful! Check your transaction on Etherscan.')
+//   } catch (error) {
+//     console.error(error)
+//     alert('Transaction failed. Please try again.')
+//   } finally {
+//     setLoading(false)
+//   }
+// }
+{
+  /* <div className="text-center p-6 rounded-lg bg-black bg-opacity-70 border border-pink-500 shadow-lg shadow-pink-500 transform hover:scale-105 transition-transform duration-300 w-full">
+            <p className="text-lg text-pink-500">Balance</p>
+            <p className="text-2xl font-bold text-white mt-2">{balance} ETH</p>
+          </div>
+          <div className="flex space-x-4 mt-6">
+            <button
+              onClick={() => flipCoin(true)}
+              className="px-6 py-3 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition duration-300 transform hover:scale-105"
+              disabled={loading}
+            >
+              Heads
+            </button>
+            <button
+              onClick={() => flipCoin(false)}
+              className="px-6 py-3 bg-red-500 text-white rounded-full shadow-lg hover:bg-red-600 transition duration-300 transform hover:scale-105"
+              disabled={loading}
+            >
+              Tails
+            </button>
+          </div>
+          {loading && (
+            <p className="text-md text-cyan-400 text-center mt-4">
+              Processing transaction...
+            </p>
+          )}
+        </div>
+      ) : (
+        <p className="text-lg text-cyan-400 text-center">
+          Please connect your wallet to see the balance.
+        </p>
+      )} */
+}
+//
+// TODO: If you use the above code for contract deployment and interaction, you can remove the flipCoin function below.
+
 const CoinFlipGame: React.FC = () => {
   const [account, setAccount] = useState<string | null>(null)
   const [balance, setBalance] = useState<string | null>(null)
@@ -50,6 +105,7 @@ const CoinFlipGame: React.FC = () => {
       alert('Please install MetaMask!')
       return
     }
+
     const provider = new ethers.BrowserProvider(window.ethereum)
     const signer = await provider.getSigner()
 
@@ -69,7 +125,6 @@ const CoinFlipGame: React.FC = () => {
       await transaction.wait()
     }
 
-    // Update the balance after the transaction
     const updatedBalance = await provider.getBalance(account!)
     setBalance(utils.fromWei(updatedBalance.toString(), 'ether'))
   }
